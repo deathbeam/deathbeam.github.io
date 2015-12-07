@@ -1,0 +1,24 @@
+---
+layout: home
+---
+
+<div class="jumbotron text-center" id="main">
+  <h1>{{ site.description }}</h1>
+</div>
+
+<div class="container">
+  {% for post in paginator.posts %}
+    <h2>{{ post.title }}</h2>
+    <p><i class="fa fa-clock-o"></i> {{ post.date | date: "%b %-d, %Y" }}</p>
+    <p>{% include post-tags.html %}</p>
+    <hr/>
+    <p>{{ post.excerpt }}<a href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
+  {% endfor %}
+
+  <nav>
+    <ul class="pager">
+      <li class="pull-left {% unless paginator.previous_page %}disabled{% endunless %}"><a href="{{ paginator.previous_page_path }}"><span aria-hidden="true">&larr;</span> Newer</a></li>
+      <li class="pull-right {% unless paginator.next_page %}disabled{% endunless %}"><a href="{{ paginator.next_page_path }}">Older <span aria-hidden="true">&rarr;</span></a></li>
+    </ul>
+  </nav>
+</div>

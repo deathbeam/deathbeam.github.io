@@ -1,0 +1,32 @@
+# Site settings
+title: nondev
+description: Stuff done right. Not good, but right.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://nondev.io" # the base hostname & protocol for your site
+google_analytics: UA-67945102-1
+permalink: :title
+
+# Social links
+social:
+  email: slusnucky@gmail.com
+  github: nondev
+  twitter: _deathbeam
+  disqus: nondev
+
+# Build settings
+paginate: 10
+markdown: redcarpet
+redcarpet:
+  extensions: ["highlight", "smart", "tables", "no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
