@@ -26,5 +26,5 @@ permalink: /projects/
   {% endif %}
 
   <p>{{ project.description }}</p>
-  <hr/>
+  {% unless forloop.last %}<hr/>{% endunless %}
 {% endfor %}
