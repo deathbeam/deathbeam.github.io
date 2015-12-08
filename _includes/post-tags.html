@@ -1,11 +1,9 @@
-<div class="post-tags">
-  <i class="fa fa-tags"></i>
-  {% if post %}
-    {% assign tags = post.tags %}
-  {% else %}
-    {% assign tags = page.tags %}
-  {% endif %}
-  {% for tag in tags %}
-  <span class="label label-info"><a href="/tags/#{{tag|slugize}}">{{tag}}</a></span>{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-</div>
+
+{% if post %}
+  {% assign tags = post.tags %}
+{% else %}
+  {% assign tags = page.tags %}
+{% endif %}
+{% for tag in tags %}
+  <a href="/tags/#{{tag|slugize}}">{{tag}}</a>{% unless forloop.last %}, {% endunless %}
+{% endfor %}

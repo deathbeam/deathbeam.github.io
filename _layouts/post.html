@@ -6,10 +6,11 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
-  
+
   <hr/>
-  <p class="post-meta"><i class="fa fa-clock-o"></i> <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  <p>{% include post-tags.html %}</p>
+  {% if page.author %}<p><i class="fa fa-user"></i> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span></p>{% endif %}
+  <p><i class="fa fa-clock-o"></i> <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
+  <p><i class="fa fa-tags"></i> {% include post-tags.html %}</p>
 
   {% include disqus.html %}
 

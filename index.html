@@ -3,10 +3,10 @@ layout: default
 ---
 
 {% for post in paginator.posts %}
-  <h2>{{ post.title }}</h2>
-  <p>{% include post-tags.html %}</p>
-  <hr/>
-  <p>{{ post.excerpt }}<a href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
+  <h2>{{ post.title }}<br/></h2>
+  <p class="text-muted">Posted in {% include post-tags.html %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}
+  </p>
+  <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
 {% endfor %}
 
 <nav>
