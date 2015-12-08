@@ -1,0 +1,30 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+{% for project in site.data.projects %}
+  <h2>{{ project.name }}</h2>
+
+  {% if project.github %}
+    <p>
+      <i class="fa fa-fw fa-github"></i>
+      <a href="https://github.com/{{ project.github }}">
+        {{ project.github }}
+      </a>
+    </p>
+  {% endif %}
+
+  {% if project.website %}
+    <p>
+      <i class="fa fa-fw fa-external-link"></i>
+      <a href="https://{{ project.website }}">
+        {{ project.website }}
+      </a>
+    </p>
+  {% endif %}
+
+  <p>{{ project.description }}</p>
+  <hr/>
+{% endfor %}
