@@ -4,7 +4,6 @@ layout: default
 
 {% for post in paginator.posts %}
   <h2>{{ post.title }}</h2>
-  <p><i class="fa fa-clock-o"></i> {{ post.date | date: "%b %-d, %Y" }}</p>
   <p>{% include post-tags.html %}</p>
   <hr/>
   <p>{{ post.excerpt }}<a href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
