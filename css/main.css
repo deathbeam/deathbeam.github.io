@@ -8,7 +8,6 @@ html {
 }
 
 body {
-  padding-top: 5rem;
   margin-bottom: 60px;
 }
 
@@ -23,10 +22,6 @@ footer {
 
 img {
   max-width: 100%;
-}
-
-.jumbotron {
-  margin-top: -1.5rem;
 }
 
 #main {

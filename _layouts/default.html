@@ -7,16 +7,6 @@
 
     {% include header.html %}
 
-    <div class="jumbotron jumbotron-fluid text-center" id="main">
-      <h1>
-        {% if page.url == "/index.html" or page.url == "/" %}
-          {{ site.description }}
-        {% elsif page.title %}
-          {{ page.title }}
-        {% endif %}
-      </h1>
-    </div>
-
     <div class="container">
       {{ content }}
     </div>
