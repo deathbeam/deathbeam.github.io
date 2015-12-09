@@ -5,26 +5,38 @@ permalink: /projects/
 ---
 
 {% for project in site.data.projects %}
-  <h2>{{ project.name }}</h2>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">{{ project.name }}</h4>
+      <div class="card-subtitle text-muted">
+        {% if project.github %}
+          <p>
+            <i class="fa fa-fw fa-github"></i>
+            <a href="https://github.com/{{ project.github }}">
+              {{ project.github }}
+            </a>
+          </p>
+        {% endif %}
 
-  {% if project.github %}
-    <p>
-      <i class="fa fa-fw fa-github"></i>
-      <a href="https://github.com/{{ project.github }}">
-        {{ project.github }}
-      </a>
-    </p>
-  {% endif %}
+        {% if project.website %}
+          <p>
+            <i class="fa fa-fw fa-external-link"></i>
+            <a href="https://{{ project.website }}">
+              {{ project.website }}
+            </a>
+          </p>
+        {% endif %}
 
-  {% if project.website %}
-    <p>
-      <i class="fa fa-fw fa-external-link"></i>
-      <a href="https://{{ project.website }}">
-        {{ project.website }}
-      </a>
-    </p>
-  {% endif %}
-
-  <p>{{ project.description }}</p>
-  {% unless forloop.last %}<hr/>{% endunless %}
+        {% if project.technologies %}
+          <p>
+            <i class="fa fa-fw fa-gears"></i>
+            {% for technology in project.technologies %}
+              {{ technology }}{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </p>
+        {% endif %}
+      </div>
+      <p class="card-text">{{ project.description }}</p>
+    </div>
+  </div>
 {% endfor %}

@@ -1,6 +1,8 @@
 - name: Spoon
   github: nondev/spoon
   website: spoonlang.org
+  technologies:
+    - Haxe
   description: >
     Spoon is a programming language that runs blazingly fast,
     compiles to native code and works everywhere.
@@ -8,6 +10,12 @@
 - name: Yae
   github: nondev/yae
   website: yae.io
+  technologies:
+    - Gradle
+    - Java
+    - Groovy
+    - MoonScript
+    - Lua
   description: >
     An engine you can use to make games in MoonScript.
     It's free, open-source, and works on Windows, Mac OS X,
@@ -15,6 +23,9 @@
 
 - name: Kaizo
   github: nondev/kaizo
+  technologies:
+    - C#
+    - Lua
   description: >
     Kaizo is a build automation tool for CLR. Kaizo is using
     Lua as build script language. Right now, Kaizo is in very
@@ -23,5 +34,11 @@
 
 - name: Jua
   github: nondev/jua
+  technologies:
+    - Lua
+    - C++
+    - C
+    - Java
+    - JNI
   description: >
     LuaJIT for Java on Windows, Mac OS X, Linux, Android and iOS.
