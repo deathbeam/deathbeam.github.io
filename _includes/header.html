@@ -10,5 +10,34 @@
         {% endif %}
       {% endfor %}
     </ul>
+    <ul class="nav nav-pills nav-right">
+      {% if site.social.email %}
+      <li>
+        <a href="mailto:{{ site.social.email }}">
+          <i class="fa fa-fw fa-envelope"></i>
+        </a>
+      </li>
+      {% endif %}
+
+      {% if site.social.github %}
+      <li>
+        <a href="https://github.com/{{ site.social.github }}">
+          <i class="fa fa-fw fa-github"></i>
+        </a>
+      </li>
+      {% endif %}
+
+      {% if site.social.twitter %}
+      <li>
+        <a href="https://twitter.com/{{ site.social.twitter }}">
+          <i class="fa fa-fw fa-twitter"></i>
+        </a>
+      </li>
+      {% endif %}
+
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+        <i class="fa fa-fw fa-rss"></i>
+      </a>
+    </ul>
   </div>
 </nav>
