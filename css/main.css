@@ -34,6 +34,7 @@ img {
   padding: 0;
   background: #674172;
   color: #fff;
+  min-height: 300px;
 }
 
 a {
@@ -44,7 +45,7 @@ a {
   position: absolute;
   width: 100%;
   text-align: center;
-  margin-top: -100px;
+  margin-top: -170px;
   padding-left: 20px;
   padding-right: 20px;
 }
