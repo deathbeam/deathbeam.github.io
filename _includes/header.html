@@ -9,33 +9,6 @@
         </li>
         {% endif %}
       {% endfor %}
-      {% if site.social.email %}
-      <li class="nav-item">
-        <a href="mailto:{{ site.social.email }}">
-          <i class="fa fa-fw fa-envelope"></i>
-        </a>
-      </li>
-      {% endif %}
-
-      {% if site.social.github %}
-      <li class="nav-item">
-        <a href="https://github.com/{{ site.social.github }}">
-          <i class="fa fa-fw fa-github"></i>
-        </a>
-      </li>
-      {% endif %}
-
-      {% if site.social.twitter %}
-      <li class="nav-item">
-        <a href="https://twitter.com/{{ site.social.twitter }}">
-          <i class="fa fa-fw fa-twitter"></i>
-        </a>
-      </li>
-      {% endif %}
-
-      <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-        <i class="fa fa-fw fa-rss"></i>
-      </a>
     </ul>
   </div>
 </nav>
