@@ -13,10 +13,6 @@
           {{ site.description }}
         {% elsif page.title %}
           {{ page.title }}
-
-          {% if page.date %}
-            <br/><small><span class="text-muted">{{ page.date | date: "%b %-d, %Y" }}</span></small>
-          {% endif %}
         {% endif %}
       </h1>
     </div>

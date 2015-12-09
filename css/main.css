@@ -3,6 +3,10 @@ html {
   min-height: 100%;
 }
 
+.container, .jumbotron .container {
+  max-width: 860px;
+}
+
 body {
   padding-top: 5rem;
   margin-bottom: 60px;
