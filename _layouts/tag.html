@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+{% for post in site.tags[page.tag] %}
+  <h2>{{ post.title }}<br/></h2>
+  <p class="text-muted">Posted in {% include post-tags.html %} on {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}</p>
+  <p>{{ post.excerpt }} <a href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
+{% endfor %}
