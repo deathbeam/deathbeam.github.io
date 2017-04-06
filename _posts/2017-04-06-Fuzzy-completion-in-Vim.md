@@ -59,7 +59,16 @@ will talk about how to use this function later.
 
 #### Using FZF with completor.vim
 
-Here, we need to use a bit different implementation of last completion function:
+So first, you are maybe asking what is
+[completor.vim](https://github.com/maralla/completor.vim)? In short it is some
+sort of async completion thingy for Vim. Faster completion, no lags and stuff.
+But this is not why I chose it. I chose it because it have awesome completion
+function that I can wrap in FZF. This completion function is deciding if it will
+run file completion, buffer completion, it's internal async completion for
+supported languages or omnicompletion. So, that is why. So, just go and get it.
+Or just use omnifunc from previous snippets.
+
+So, here, we need to use a bit different implementation of last completion function:
 
 ```vim
 function! FzfCompletionPop(findstart, base)
