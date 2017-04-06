@@ -160,3 +160,8 @@ great, trust me.
 
 I will try to write more articles about some cool random stuff I am doing with
 Vim and Tmux (if I will have time) so stay tuned (or not, whatever).
+
+Also, here are my
+**[dotfiles](https://github.com/deathbeam/dotfiles)** that contains everything
+mentioned in this post and a lot more.
+
