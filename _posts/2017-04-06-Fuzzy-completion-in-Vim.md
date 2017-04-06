@@ -157,3 +157,6 @@ Now, place whatever you want from here to your `.vimrc`, and we are done. Yes,
 we are done, do no talk to my father of father of my father of my father ever
 again. Maybe I will post also screenshot later, but now, I won't, but it is
 great, trust me.
+
+I will try to write more articles about some cool random stuff I am doing with
+Vim and Tmux (if I will have time) so stay tuned (or not, whatever).
