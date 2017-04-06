@@ -1,14 +1,15 @@
-- name: Spoon
-  github: nondev/spoon
-  website: spoonlang.org
+- name: Parsihax
+  github: deathbeam/parsihax
   technologies:
     - Haxe
   description: >
-    Spoon is a programming language that runs blazingly fast,
-    compiles to native code and works everywhere.
+    Parsihax is a small library for writing big parsers made
+    up of lots of little parsers. The API is inspired by parsec
+    and Parsimmon (originally, Parsihax was just supposed to be
+    Parsimmon rewrite in Haxe).
 
 - name: Yae
-  github: nondev/yae
+  github: deathbeam/yae
   website: yae.io
   technologies:
     - Gradle
@@ -21,19 +22,8 @@
     It's free, open-source, and works on Windows, Mac OS X,
     Linux, Android, iOS and Ouya.
 
-- name: Kaizo
-  github: nondev/kaizo
-  technologies:
-    - C#
-    - Lua
-  description: >
-    Kaizo is a build automation tool for CLR. Kaizo is using
-    Lua as build script language. Right now, Kaizo is in very
-    early development, but it will work on Windows, Linux and Mac.
-    Kaizo is heavily inspired by Gradle.
-
 - name: Jua
-  github: nondev/jua
+  github: deathbeam/jua
   technologies:
     - Lua
     - C++
@@ -42,3 +32,12 @@
     - JNI
   description: >
     LuaJIT for Java on Windows, Mac OS X, Linux, Android and iOS.
+
+- name: fw.php
+  github: deathbeam/fw.php
+  technologies:
+    - PHP
+  description: >
+    fw.php is super simple and easy to use PHP framework.
+    Perfect for quickly building real and clean applications.
+
