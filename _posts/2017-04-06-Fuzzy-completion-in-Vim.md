@@ -7,11 +7,7 @@ tags:
   - fzf
 ---
 
-I was not active for more than a year again, but hopefully this time it will be
-finally interesting.
-
-So, here is how final result will look like (that small thing at bottom right):
-![](http://i.imgur.com/tQbIFW7.png)
+TLDR: Here is how final result will look like (that small thing at bottom right): ![](http://i.imgur.com/tQbIFW7.png)
 
 Recently, I really fell in love with [FZF](https://github.com/junegunn/fzf). FZF
 is really awesome fuzzy finder for command-line. I started to use to navigate
